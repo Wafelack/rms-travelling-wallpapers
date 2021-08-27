@@ -1,0 +1,33 @@
+== RMS-travelling-wallpapers
+
+Program to regularly change the wallpaper for use with the X window system.
+
+The original idea is not mine, it's link:https://github.com/Tim-ats-d[Tim-ats-d]'s, I just made a slightly improved program with more configuration and more environnment coverage.
+
+=== Installing
+
+Prerequisties: +feh+, +perl+.
+
+[source,bash]
+----
+mkdir -p ~/.local/bin
+wget https://raw.githubusercontent.com/wafelack/rms-travelling-wallpapers/master/travel.pl
+install -m 711 travel.pl ~/.local/bin
+----
+
+If you want to automatically start this program as you start a X server, put this in your +~/.xinitrc~:
+[source,bash]
+----
+~/.local/bin/travel.pl&
+----
+
+=== Configuration
+
+This program is configured by passing command line flags when executed. +
+Refer to the top of the code to know what those flags do and the possible options.
+
+=== License
+
+This work is licensed under the GNU General Public License version 3.0 or any later version. +
+Note: I do not own any of the images inside the +pictures/+ folder, therefore the above license does not apply to them. +
+      Refer to link:https://www.stallman.org/photos/rms-working/index.html[this page] for the images source and licensing information.

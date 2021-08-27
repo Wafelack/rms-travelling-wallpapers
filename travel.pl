@@ -50,7 +50,7 @@ sub choose_wallpaper {
 
 while (1) {
     my $wallpaper_path = choose_wallpaper;
-    `feh --bg-center $wallpaper_path`;
+    `feh --bg-$scaling_type $wallpaper_path`;
     print "-- Changed wallpaper to $wallpaper_path";
     sleep $delay;
 }

@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/wafelack/rms-travelling-wallpapers/master
 install -m 711 travel.pl ~/.local/bin
 ----
 
-If you want to automatically start this program as you start a X server, put this in your +~/.xinitrc~:
+If you want to automatically start this program as you start a X server, put this in your +/.xinitrc+:
 [source,bash]
 ----
 ~/.local/bin/travel.pl&
